@@ -2,12 +2,13 @@
 <!-- This is the fragment  to be displayed for a section associated with a tab -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ccd8d8d9">
 
-   <ListView
-       android:id="@+id/lv_feed"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-          </ListView>
+    <ListView
+        android:id="@+id/lv_feed"
+        android:background="#ccd8d8d9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 </LinearLayout>

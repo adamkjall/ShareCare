@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ItemDetail"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+
+  >
+
+    <ImageView
+        tools:src="@drawable/portable_pressure_pump"
+        android:id="@+id/itemImage"
+        android:layout_width="340dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:id="@+id/ttl_txvw"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/loc_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/ratingBar"
+            >
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_place_pointer" />
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/myImageView"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="italic|normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/desc_txtvw"
+        android:layout_margin="8dp"
+        android:textStyle="italic|normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Contact:"/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/Name_txtvw"
+            android:textStyle="italic|normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/addrss_txtvw"
+            android:textStyle="italic|normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/phoneNo"
+            android:textStyle="italic|normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/book_btn"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Book"
+        android:textAlignment="center" />
+</LinearLayout>

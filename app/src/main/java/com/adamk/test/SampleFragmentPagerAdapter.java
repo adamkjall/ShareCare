@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2"};
+    private String tabTitles[] = new String[] { "HELLO", "Tab2"};
 
     public SampleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);

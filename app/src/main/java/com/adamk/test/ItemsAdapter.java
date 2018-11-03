@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 
@@ -55,6 +56,8 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         holder.tv_title.setText(item.getTitle());
         holder.tv_distance.setText(item.getDistance());
 
+        holder.ratingBar.setRating(item.getRating());
+
         return convertView;
     }
 
@@ -71,6 +74,7 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         private TextView tv_title;
         private TextView tv_description;
         private TextView tv_distance;
+        private RatingBar ratingBar;
 
         public ViewHolder(@NonNull View itemView) {
 
@@ -78,7 +82,9 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
 
             iv_image = itemView.findViewById(R.id.iv_main_image);
             tv_title = itemView.findViewById(R.id.tv_main_title);
+            //tv_description = itemView.findViewById(R.id.tv_details);
             tv_distance = itemView.findViewById(R.id.tv_main_distance);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
         }
 
     }

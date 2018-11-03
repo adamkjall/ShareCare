@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         // Attach the view pager to the tab strip
         tabsStrip.setViewPager(viewPager);
 
+        PagerSlidingTabStrip psts = findViewById(R.id.tabs);
+        psts.setTextColor(16777215); // white color
         //buildRecyclerView();
 
 
